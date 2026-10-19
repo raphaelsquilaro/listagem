@@ -3,7 +3,9 @@ import 'package:foto/pages/cep.dart';
 import 'package:foto/pages/cnpj.dart';
 import 'package:foto/pages/dolar.dart';
 import 'package:foto/pages/gps.dart';
+import 'package:foto/pages/listagem.dart';
 import 'package:foto/pages/login.dart';
+import 'package:foto/pages/persistencia.dart';
 import 'package:foto/pages/trabalho.dart';
 
 class Home extends StatelessWidget {
@@ -204,6 +206,36 @@ class Home extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                       builder: (context) => const Gps(),
+                    ),
+                  );
+                },
+              ),
+
+              _menuItem(
+                context: context,
+                icon: Icons.my_location_rounded,
+                title: 'financeiro',
+                color: cinzaAzulado,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FinanceiroApp(),
+                    ),
+                  );
+                },
+              ),
+
+              _menuItem(
+                context: context,
+                icon: Icons.my_location_rounded,
+                title: 'Comentarios',
+                color: cinzaAzulado,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const Feed(),
                     ),
                   );
                 },

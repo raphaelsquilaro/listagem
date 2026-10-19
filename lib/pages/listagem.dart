@@ -9,9 +9,9 @@ class Feed extends StatefulWidget {
 
 class _FeedState extends State<Feed> {
   final List<String> fotos = [
-    'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=600',
-    'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600',
-    'https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=600',
+    '../../assets/dangaronpa.jpg',
+    '../../assets/jojo.jpg',
+    '../../assets/madoka.jpg',
   ];
 
   final List<int> curtidas = [12, 25, 8];
